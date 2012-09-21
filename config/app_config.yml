@@ -1,0 +1,18 @@
+defaults: &defaults
+
+  hipchat:
+    token: aa374f31a35ed5d208d22331a2ebc7
+    name: iTriage Bot
+    url: https://api.hipchat.com/v1/
+
+  redis:
+    host: localhost
+    port: 6397
+
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+

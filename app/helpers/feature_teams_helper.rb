@@ -1,0 +1,2 @@
+module FeatureTeamsHelper
+end

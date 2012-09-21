@@ -1,0 +1,25 @@
+%h1 Listing feature_teams
+
+%table
+  %tr
+    %th Name
+    %th Slug
+    %th Branch
+    %th Room
+    %th
+    %th
+    %th
+
+  - @feature_teams.each do |feature_team|
+    %tr
+      %td= feature_team.name
+      %td= feature_team.slug
+      %td= feature_team.branch
+      %td= feature_team.room
+      %td= link_to 'Show', feature_team
+      %td= link_to 'Edit', edit_feature_team_path(feature_team)
+      %td= link_to 'Destroy', feature_team, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Feature team', new_feature_team_path
