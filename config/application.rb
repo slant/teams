@@ -16,10 +16,10 @@ module Teams
     # -- all .rb files in that directory are automatically loaded.
 
     # Load app_config.yml into Rails configuration
-    require 'active_support/hash_with_indifferent_access'
+    require 'active_support/core_ext/hash'
     app_config = {}
     begin
-      app_config = HashWithIndifferentAccess[YAML.load_file(File.join("config", "app_config.yml"))[Rails.env]]
+      app_config = YAML.load_file(File.join("config", "app_config.yml"))[Rails.env].with_indifferent_access
     rescue
       puts "\nWARNING: It appears as though you are missing the config/app_config.yml file.\n\n"
     end

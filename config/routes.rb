@@ -1,9 +1,10 @@
 Teams::Application.routes.draw do
-  resources :users
-
-  resources :rooms
-
+  resources :servers
+  resources :repositories
+  resources :deploys
   resources :feature_teams
+  resources :members
+  resources :rooms
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -54,7 +55,7 @@ Teams::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'feature_teams#index'
 
   # See how all your routes lay out with "rake routes"
 

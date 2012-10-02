@@ -1,0 +1,15 @@
+= form_for @server do |f|
+  - if @server.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@server.errors.count, "error")} prohibited this server from being saved:"
+      %ul
+        - @server.errors.full_messages.each do |msg|
+          %li= msg
+
+  %p What is the hostname of the staging server (not including the protocol or domain)?
+
+  .field.input-append
+    = f.label :subdomain, 'Hostname'
+    = f.text_field(:subdomain, placeholder: 'staging') + ' ' + content_tag(:span, '.itriagehealth.com', class: 'add-on')
+  .actions
+    = f.submit 'Save'

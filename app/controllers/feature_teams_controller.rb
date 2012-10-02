@@ -1,4 +1,6 @@
 class FeatureTeamsController < ApplicationController
+  before_filter :available_servers
+
   # GET /feature_teams
   # GET /feature_teams.json
   def index
@@ -80,4 +82,11 @@ class FeatureTeamsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  private
+
+    def available_servers
+      @available_servers = Server.available
+    end
 end

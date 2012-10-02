@@ -1,0 +1,15 @@
+%h2= @server.subdomain
+
+%p= link_to @server.hostname, "https://#{@server.hostname}"
+
+%p
+  %b Feature Team:
+  - if @server.feature_team
+    = link_to @server.feature_team.name, @server.feature_team
+  - else
+    Unassigned
+
+
+= link_to 'Edit', edit_server_path(@server)
+\|
+= link_to 'Back', servers_path

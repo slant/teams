@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem 'haml-rails'
 gem 'twitter-bootstrap-rails'
 gem 'pry'
-gem 'hipchat'
+gem 'hipchat-api'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,10 +27,13 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'factory_girl'
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 

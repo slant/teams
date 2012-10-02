@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 describe FeatureTeam do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should have_many(:members).through(:memberships) }
+  it { should have_many(:servers).through(:feature_team_servers) }
+  it { should have_many(:deploys).through(:repositories) }
 end

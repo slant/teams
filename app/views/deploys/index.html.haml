@@ -1,0 +1,25 @@
+%h1 Listing deploys
+
+%table
+  %tr
+    %th Repository
+    %th Branch
+    %th SHA
+    %th Member
+    %th Environment
+    %th Server
+    %th
+    %th
+    %th
+
+  - @deploys.each do |deploy|
+    %tr
+      %td= deploy.repository
+      %td= deploy.branch
+      %td= deploy.sha
+      %td= deploy.member
+      %td= deploy.environement
+      %td= deploy.server
+      %td= link_to 'Show', deploy
+      %td= link_to 'Edit', edit_deploy_path(deploy)
+      %td= link_to 'Destroy', deploy, method: :delete, data: { confirm: 'Are you sure?' }

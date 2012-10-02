@@ -1,0 +1,20 @@
+%h2= @member.name
+
+%p
+  %b Email:
+  = @member.email
+
+%p
+  %b Hipchat ID:
+  = @member.hipchat_id
+
+%p
+  %b Feature Teams:
+  - if @member.feature_teams.any?
+    = list_feature_teams(@member)
+  - else
+    none
+
+= link_to 'Edit', edit_member_path(@member)
+\|
+= link_to 'Back', members_path

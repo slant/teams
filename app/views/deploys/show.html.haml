@@ -1,0 +1,4 @@
+%p #{link_to @deploy.member.first_name, @deploy.member} deployed the #{@deploy.branch} branch of #{link_to @deploy.repository.name, @deploy.repository.github_url} to the #{link_to @deploy.server.subdomain, "https://#{@deploy.server.hostname}"} server #{time_ago_in_words(@deploy.created_at)} ago.
+%p Commit deployed (#{commit_link @deploy}): #{@deploy.commit_message}
+
+= link_to 'Back', deploys_path

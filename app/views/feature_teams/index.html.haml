@@ -1,25 +1,31 @@
-%h1 Listing feature_teams
+%h1 Feature Teams
 
-%table
-  %tr
-    %th Name
-    %th Slug
-    %th Branch
-    %th Room
-    %th
-    %th
-    %th
+- if @feature_teams.any?
+  %table.table.table-hover
+    %thead
+      %tr
+        %th Name
+        %th Members
+        %th Branch
+        %th Room
+        %th Server
+        %th
+        %th
+        %th
 
-  - @feature_teams.each do |feature_team|
-    %tr
-      %td= feature_team.name
-      %td= feature_team.slug
-      %td= feature_team.branch
-      %td= feature_team.room
-      %td= link_to 'Show', feature_team
-      %td= link_to 'Edit', edit_feature_team_path(feature_team)
-      %td= link_to 'Destroy', feature_team, method: :delete, data: { confirm: 'Are you sure?' }
+    %tbody
+      - @feature_teams.each do |feature_team|
+        %tr
+          %td= link_to feature_team.name, feature_team
+          %td.center= member_count(feature_team)
+          %td= feature_team.branch
+          %td= link_to feature_team.room.name, room_path(feature_team.room)
+          %td= link_to feature_team.server.hostname, server_path(feature_team.server)
+          %td= action_buttons feature_team
+
+- else
+  %p No feature teams yet.
 
 %br
 
-= link_to 'New Feature team', new_feature_team_path
+= link_to 'New Feature Team', new_feature_team_path

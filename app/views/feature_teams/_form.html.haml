@@ -9,14 +9,18 @@
   .field
     = f.label :name
     = f.text_field :name
-  .field
-    = f.label :slug
-    = f.text_field :slug
+
   .field
     = f.label :branch
     = f.text_field :branch
-  .field
-    = f.label :room
-    = f.text_field :room
+
+  - if controller.action_name == :edit
+    .field
+      = f.label :server
+      = f.select :server_id, @available_servers.collect{ |s| [s.subdomain, s.id] }, include_blank: true
+
+  -#.field
+    -#%p= link_to 'Advanced...', '#'
+
   .actions
     = f.submit 'Save'

@@ -1,0 +1,10 @@
+.well.sidebar-nav
+  %h3 Recent Activity
+  %ul.nav.nav-list
+    %li.nav-header Deploys
+    - Deploy.recent(5).each do |d|
+      %li
+        = link_to d do
+          = d.feature_team.name
+          %br/
+          = time_ago_in_words(d.created_at) + ' ago'

@@ -1,0 +1,25 @@
+%h1 Members
+
+- if @members.any?
+  %table.table.table-hover
+    %thead
+      %tr
+        %th Name
+        %th Email
+        %th Feature Teams
+        %th Actions
+
+    %tbody
+      - @members.each do |member|
+        %tr
+          %td= link_to(member.formatted_name, member)
+          %td= mail_to member.email
+          %td= list_feature_teams(member)
+          %td= action_buttons(member)
+
+- else
+  %p No members yet.
+
+%br
+
+= link_to 'New Member', new_member_path

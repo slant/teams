@@ -1,17 +1,33 @@
-%p#notice= notice
+%h2= @feature_team.name
 
-%p
-  %b Name:
-  = @feature_team.name
-%p
-  %b Slug:
-  = @feature_team.slug
 %p
   %b Branch:
   = @feature_team.branch
+
 %p
   %b Room:
-  = @feature_team.room
+  = link_to @feature_team.room.name, room_path(@feature_team.room)
+
+%p
+  %b Server:
+  = link_to @feature_team.server.hostname, @feature_team.server
+
+%h4 Members
+- if @feature_team.members.any?
+  %ul
+    - @feature_team.members.each do |member|
+      %li= link_to member.name, member
+- else
+  %p No members yet
+
+%h4 Deploys
+- if @feature_team.deploys.any?
+  %table
+    - @feature_team.deploys.each do |deploy|
+      %tr
+        %td= link_to deploy.sha[0...10], deploy
+- else
+  %p No deploys yet
 
 = link_to 'Edit', edit_feature_team_path(@feature_team)
 \|

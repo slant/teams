@@ -1,9 +1,13 @@
 defaults: &defaults
 
+  domain: itriagehealth.com
+  repositories_path: /Users/ryan/dev/healthagen
+
   hipchat:
     token: aa374f31a35ed5d208d22331a2ebc7
     name: iTriage Bot
-    url: https://api.hipchat.com/v1/
+
+  hubot_token: 2eaf172f901f24feb311527c3ddc04
 
   redis:
     host: localhost

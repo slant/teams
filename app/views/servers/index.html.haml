@@ -1,0 +1,23 @@
+%h1 Servers
+
+- if @servers.any?
+  %table.table.table-hover
+    %thead
+      %tr
+        %th Hostname
+        %th
+        %th
+        %th
+
+    %tbody
+      - @servers.each do |server|
+        %tr
+          %td= link_to server.hostname, server
+          %td= action_buttons server
+
+- else
+  %p No servers yet.
+
+%br
+
+= link_to 'New Server', new_server_path
