@@ -19,9 +19,14 @@ module Teams
     require 'active_support/core_ext/hash'
     app_config = {}
     begin
-      app_config = YAML.load_file(File.join("config", "app_config.yml"))[Rails.env].with_indifferent_access
+      # if File.exists?(File.join("config", "app_config.yml"))
+      if false
+        app_config = YAML.load_file(File.join("config", "app_config.yml"))[Rails.env].with_indifferent_access
+      else
+        ENV.keys.each { |k| app_config.merge!({ k.downcase => ENV[k] }) }
+      end
     rescue
-      puts "\nWARNING: It appears as though you are missing the config/app_config.yml file.\n\n"
+      puts "\nWARNING: It appears as though either you are missing the config/app_config.yml file or required environment variables.\n\n"
     end
     Rails.configuration.app = app_config
 
