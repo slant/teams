@@ -7,11 +7,12 @@ class Member < ActiveRecord::Base
   before_validation :get_hipchat_id
 
   validates :hipchat_id, presence: true
+  validates :first_name, :last_name, presence: true
 
   default_scope order(:last_name)
 
   def get_hipchat_id
-    unless self[:hipchat_id].present?
+    unless self[:hipchat_id].present? || ['development', 'test'].include?(Rails.env)
       hipchat = HipChat::API.new(Rails.configuration.app[:hipchat][:token])
       user = hipchat.users_show(self.email)
 
@@ -22,6 +23,8 @@ class Member < ActiveRecord::Base
         message = user['error']['code'] == 404 ? 'No hipchat user was found with that email address.' : user['error']['message']
         errors.add(:hipchat_id, message)
       end
+    else
+      self[:hipchat_id] = '11111' if [:development, :test].include?(Rails.env)
     end
   end
 

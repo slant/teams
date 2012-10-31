@@ -16,16 +16,17 @@
 - if @feature_team.members.any?
   %ul
     - @feature_team.members.each do |member|
-      %li= link_to member.name, member
+      %li #{link_to(member.name, member)}#{@feature_team.quarterback_id == member.id ? " (Quarterback)" : nil }
 - else
   %p No members yet
 
 %h4 Deploys
 - if @feature_team.deploys.any?
-  %table
-    - @feature_team.deploys.each do |deploy|
+  %table.table
+    - @feature_team.deploys.recent(5).each do |deploy|
       %tr
-        %td= link_to deploy.sha[0...10], deploy
+        %td= link_to deploy.short_sha, deploy
+        %td #{time_ago_in_words(deploy.created_at)} ago
 - else
   %p No deploys yet
 

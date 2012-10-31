@@ -1,10 +1,15 @@
 Teams::Application.routes.draw do
+
+  resources :feature_teams do
+    resources :members
+    resources :deploys
+  end
+
+  resources :members
+  resources :deploys
+  resources :rooms
   resources :servers
   resources :repositories
-  resources :deploys
-  resources :feature_teams
-  resources :members
-  resources :rooms
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

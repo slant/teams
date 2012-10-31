@@ -35,10 +35,11 @@ ActiveRecord::Schema.define(:version => 20120922080617) do
     t.string   "name"
     t.string   "slug"
     t.string   "branch"
+    t.integer  "quarterback_id"
     t.integer  "server_id"
     t.integer  "room_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   add_index "feature_teams", ["room_id"], :name => "index_feature_teams_on_room_id"

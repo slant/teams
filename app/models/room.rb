@@ -8,12 +8,15 @@ class Room < ActiveRecord::Base
   def create_hipchat_room
     @hipchat = HipChat::API.new(Rails.configuration.app[:hipchat][:token])
 
-    room_name = "Team: #{self.name}"
-    response = @hipchat.rooms_create(room_name, 148845).parsed_response
+    room_name = "[FT] #{self.name}"
 
-    Rails.logger.info "~~~~~"
-    Rails.logger.info response
-    Rails.logger.info "~~~~~"
+    unless ![:development, :test].include?(Rails.env)
+      Rails.logger.info "ROOM WAS REALLY CREATED!!! Oh noes!"
+      response = @hipchat.rooms_create(room_name, 148845).parsed_response
+    else
+      Rails.logger.info "ROOM NOT REALLY CREATED"
+      response = { 'room' => { 'room_id' => '11111' } }
+    end
 
     if response['room']
       self['name'] = room_name

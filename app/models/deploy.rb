@@ -17,6 +17,10 @@ class Deploy < ActiveRecord::Base
     "Success!"
   end
 
+  def short_sha
+    sha ? sha[0...10] : 'No sha provided'
+  end
+
   def github_url
     "https://github.com/Healthagen/itriage3/commit/#{sha}"
   end

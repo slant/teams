@@ -1,16 +1,19 @@
 require 'active_support/inflector'
 
 class FeatureTeam < ActiveRecord::Base
-  has_many :memberships
+  has_many :memberships, dependent: :destroy
   has_many :members, through: :memberships
 
   has_many :deploys
   has_many :repositories, through: :deploys
 
   belongs_to :server
-  belongs_to :room
+  belongs_to :room, dependent: :destroy
+  belongs_to :quarterback, class_name: 'Member', foreign_key: 'quarterback_id'
 
-  attr_accessible :branch, :name, :slug, :room_id, :server_id
+  accepts_nested_attributes_for :members
+
+  attr_accessible :branch, :name, :slug, :room_id, :server_id, :quarterback_id, :members_attributes
 
   before_validation :generate_branch
   before_create :create_room, :assign_server
@@ -26,9 +29,9 @@ class FeatureTeam < ActiveRecord::Base
 
   def generate_branch
     if self[:branch].blank?
-      self[:branch] = "feature_" + name.parameterize.underscore if name
+      self[:branch] = "develop_" + name.parameterize.underscore if name
     else
-      self[:branch] = "feature_" + self[:branch].downcase
+      self[:branch] = "develop_" + self[:branch].downcase
     end
   end
 

@@ -6,13 +6,13 @@ describe "deploys/index" do
       stub_model(Deploy,
         :repository => "Repository",
         :branch => "Branch",
-        :sha => "Sha",
+        :sha => "sha",
         :user => nil
       ),
       stub_model(Deploy,
         :repository => "Repository",
         :branch => "Branch",
-        :sha => "Sha",
+        :sha => "sha",
         :user => nil
       )
     ])

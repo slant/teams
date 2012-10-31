@@ -1,0 +1,1500 @@
+exit
+options[:id]
+exit
+options
+exit
+whereami
+exit
+options[:id]
+exit
+SessionHash.new(self, env)'
+SessionHash.new(self, env)
+OptionsHash.new(self, env, @default_options)
+@default_options
+self
+whereami
+self.class
+env.class
+session_data
+options[:value]
+options
+exit
+options[:value]
+options
+exit
+exi
+exit
+OptionsHash.new(self, env, @default_options)
+OptionsHash.new(self, env, @default_options)[:id]
+SessionHash.new(self, env)
+options[:id] || generate_sid
+options[:id]
+options
+options[:id]
+exit
+options
+next
+options
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+next
+env[ENV_SESSION_KEY]
+OptionsHash.new(self, env, @default_options)
+next
+env[ENV_SESSION_OPTIONS_KEY]
+next
+env[ENV_SESSION_OPTIONS_KEY]
+@app.class
+@app.call('asdf')
+exit
+next
+@env['omniauth.strategy']
+next
+@env['omniauth.strategy']
+next
+@env['omniauth.strategy']
+self
+on_auth_path?
+next
+exit
+session_data
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+sid
+sid.blank?
+env["rack.request.cookie_hash"]
+env["rack.request.cookie_hash"]["itriage_user_credentials"]
+exit
+sid
+sid.blank? && env["rack.request.cookie_hash"] && env["rack.request.cookie_hash"]["itriage_user_credentials"]
+sid.blank?
+env["rack.request.cookie_hash"]
+env["rack.request.cookie_hash"]["itriage_user_credentials"]
+(sid.blank? && env["rack.request.cookie_hash"] && env["rack.request.cookie_hash"]["itriage_user_credentials"])
+sid
+next
+exit
+sid
+options[:id]
+next
+sid
+exit
+value
+exit
+whereami
+sid
+env["rack.request.cookie_hash"]["itriage_user_credentials"]
+next
+sid
+next
+sid
+current_session_id(env)
+next
+@by.send(:load_session, @env)
+@env[ENV_SESSION_OPTIONS_KEY][:id]
+exit
+next
+sid
+next
+sid
+next
+exit
+quit
+exit
+next
+sid
+next
+exit
+sid
+next
+size
+sid
+exit
+next
+sid
+next
+sid
+next
+exit
+sid
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+sid
+next
+sid
+next
+sid
+next
+sid
+@pool.get(sid)
+next
+session
+next
+sid
+next
+id
+next
+key
+value
+next
+request
+next
+exit
+options
+next
+options
+exit
+next
+sid
+next
+sid
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+next
+sid
+next
+sid
+next
+value
+options[:expire_after]
+next
+request
+whereami
+options
+cookie
+set_cookie(request, cookie.merge!(options))
+request.finish
+next
+response
+next
+exit
+next
+exit
+env[ENV_SESSION_KEY]
+ENV_SESSION_KEY
+ENV_SESSION_OPTIONS_KEY
+session_data
+exit
+session_data
+next
+value
+set_session(env, sid, session_data)
+sid
+next
+cookie
+next
+cookie
+options[:expire_after]
+exit
+sid
+exit
+next
+Rails.application
+Rails.application.call(env)
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+env[ENV_SESSION_OPTIONS_KEY].merge({ thing: '1' })
+next
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+env[ENV_SESSION_OPTIONS_KEY].merge({ id: "cf3cd8f96dd83348d3cc9e77c3b41f65" })
+env[ENV_SESSION_OPTIONS_KEY]
+env[ENV_SESSION_OPTIONS_KEY].class
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+env[ENV_SESSION_OPTIONS_KEY] = OptionsHash.new(self, env, @default_options.merge({ id: 'thing' }))
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+next
+eit
+exit
+ext
+exut
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+next
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+env[ENV_SESSION_OPTIONS_KEY]
+@default_options
+next
+env['rack.request.cookie_hash']
+env['rack.request']
+request = ActionDispatch::Request.new(env)
+request.get_cookie(request, :itriage_user_credentials)
+request.cookie[:itriage_user_credentials]
+request.cookies[:itriage_user_credentials]
+request.cookies
+request.cookies['itriage_user_credentials']
+exit
+next
+request
+whereami
+next
+itriage_user_credentials
+next
+@default_options
+@default_options.class
+@default_options.merge({ id: itriage_user_credentials })
+@default_options.class
+@default_options
+@default_options.frozen?
+@default_options.merge!({ id: itriage_user_credentials })
+@default_options
+exit
+next
+@default_options
+next
+@default_options
+env[ENV_SESSION_OPTIONS_KEY]
+next
+sid
+next
+value
+next
+cookie
+next
+request
+next
+exit
+session_id
+cookies["itriage_user_credentials"]
+exit
+env.grep itriage_user_credentials
+env.grep cookies
+env.grep 'cookies'
+env.grep 'request'
+exit
+request.cookies
+exit
+params
+next
+params[:appointment_id]
+next
+up
+parent
+help
+whereami
+next
+exit
+thing = cookies['thing']
+request
+request.cookies
+stuff = request.cookies['itriage_user_credentials'] || request.cookies['things']
+stuff
+stuff = request.cookies['itriage_user_credentials'] || request.cookies['_itriage_session']
+exit
+session
+request
+request.grep
+request.grep 'session'
+request.session
+request.current_user
+request.user
+request.keys
+request.methods - Object.methods
+request[:session]
+request[:session_options]
+exit
+next
+exit
+ItriageUser
+Redis
+Redis.connect.get(requ)
+next
+Redis.connect.get(itriage_user_credentials)
+Redis.connect.get(Marshal.load(itriage_user_credentials))
+Marshal.methods
+Marshal.methods.sort - Object.methods
+Redis.connect.get(Marshal.restore(itriage_user_credentials))
+Redis.connect.get(Marshal.dump(itriage_user_credentials))
+Marshal.load(Redis.connect.get(itriage_user_credentials))
+Marshal.load(Redis.connect.get(itriage_user_credentials))[:user_id]
+Marshal.load(Redis.connect.get(itriage_user_credentials))['user_id']
+user_id = Marshal.load(Redis.connect.get(itriage_user_credentials))['user_id']
+request.cookies['itriage_user_credentials']
+request.cookies['itriage_user_credentials'].split('::', 2)[0]
+next
+exit
+next
+session_id
+current_user
+current_user.id
+[session_id, current_user.id].join('::')
+exit
+user_signed_in?
+exit
+next
+session_id
+next
+exit
+request.cookies['itriage_user_credentials']
+next
+env[ENV_SESSION_OPTIONS_KEYS][:id]
+env[ENV_SESSION_OPTIONS_KEYS]['id']
+env[ENV_SESSION_OPTIONS_KEYS]
+env[ENV_SESSION_OPTIONS_KEY
+]
+env[ENV_SESSION_OPTIONS_KEY]
+env[ENV_SESSION_OPTIONS_KEYS]
+env[ENV_SESSION_OPTIONS_KEY][:id]
+request.cookies['itriage_user_credentials']
+exit
+session_id
+next
+session_id
+exit
+next
+env[ENV_SESSION_OPTIONS_KEY]
+nex
+net
+next
+session_id
+current_user
+exit
+next
+env[ENV_SESSION_OPTIONS_KEY]
+exit
+ext
+exit
+next
+itriage_user_credentials.present?
+itriage_user_credentials
+request.cookies['itriage_user_credentials']
+exit
+nest
+next
+itriage_user_credentials
+request.cookies['itriage_user_credentials']
+exit
+next
+request.cookies['itriage_user_credentials']
+request.cookies['itriage_user_credentials'] = "thing"
+exit
+exitnext
+next
+request.cookies['itriage_user_credentials'] = "thing"
+exit
+request.cookies['itriage_user_credentials']
+request.finish
+exit
+itriage_user_credentials = request.cookies['itriage_user_credentials'] || request.cookies['user_credentials']
+request.cookies['itriage_user_credentials'] = request.cookies['user_credentials'] = itriage_user_credentials
+itriage_user_credentials = itriage_user_credentials.split('::', 2)[0]
+itriage_user_credentials
+itriage_user_credentials = itriage_user_credentials.split('::', 2)[0]
+exit
+next
+itriage_user_credentials = request.cookies['itriage_user_credentials'] || request.cookies['user_credentials']
+next
+@custom_default_options
+next
+exit
+next
+itriage_user_credentials = request.cookies['itriage_user_credentials'] || request.cookies['user_credentials']
+request.cookies['user_credentials']
+request.cookies['itriage_user_credentials']
+exit
+next
+session_id
+current_user.id
+next
+exit
+next
+session_id
+current_user
+session
+next
+exit
+next
+session_id
+next
+session
+cookies
+exit
+cookies
+exit
+next
+@_env
+whereami
+@_env['omniauth.auth']
+exit
+next
+access_token
+access_token.token
+@_env['omniauth.auth']
+exit
+ENVIRONMENT_HOSTNAME
+env['ENVIRONMENT_HOSTNAME']
+@env['ENVIRONMENT_HOSTNAME']
+ENV['ENVIRONMENT_HOSTNAME']
+ENV
+exit
+request.host
+request
+exit
+ENVIRONMENT_HOSTNAME
+exit
+request
+env_host_name
+exit
+env_host_name
+next
+env_host_name
+exit
+request
+env_host_name
+exit
+whereami
+end
+exit
+ENVIRONMENT_HOSTNAME
+exit
+env_host_name
+exit
+env_host_name
+exit
+env_host_name
+helpers
+helper
+ApplicationHelper
+env_host_name_helper
+ApplicationHelper.env_host_name_helper
+ApplicationHelper::env_host_name_helper
+ApplicationHelper.methods
+ApplicationHelper.methods - Object.methods
+ApplicationHelper.instance_methods - Object.methods
+ApplicationHelper.instance_methods - Object.instance_methods
+ApplicationHelper.new.env_host_name_helper
+ApplicationController.env_host_name
+ApplicationController.method(:env_host_name)
+ApplicationController.instance_methods.include? :env_host_name
+env_host_name
+exit
+env_host_name
+next
+exit
+env_host_name
+exit
+request.methods - Object.methods
+request.attributes - Object.methods
+request.class
+request
+Request
+::Request
+next
+request
+exit
+env
+@env
+@_env
+@_env['HTTP_HOST']
+exit
+@_env['HTTP_HOST']
+env_host_name
+exit
+@_env['HTTP_HOST']
+exit
+env
+ENV
+request
+@env
+@ENV
+@_env
+exit
+ENV
+ENV['HTTP_HOST']
+request
+@_env
+@env
+env
+ENV.keys
+ENV['RAILS_ENV'].keys
+ENV['RAILS_ENV']
+request
+REQUEST
+Rails.application.hostname
+exit
+request
+ENV
+@env
+@_env
+ENV
+exit
+request.format
+respond_to do |format|
+  format.json { json: {message: 'wtf, m8?'} }
+end
+respond_to do |format|
+  format.json { message: 'wtf, m8?' }
+end
+respond_to do |format|
+  format.json { { message: 'wtf, m8?' } }
+end
+exit
+request.json
+request.json?
+request.format.class
+request.format.json?
+exit
+enxt
+next
+exit
+return redirect_to root_path, notice: 'the admin portal is down biatch'
+next
+t('maintenance_mode.message')
+maintenance_mode?
+exit
+next
+maintenance_mode?
+next
+exit
+self
+self.methods - Object.methods
+self.respond_to? :current_ability
+self.new.respond_to? :current_ability
+current_ability
+self.new.current_ability
+exit
+super
+Itriage::AuthClient::Ability.new
+@current_ability ||= Itriage::AuthClient::Ability.new(current_authentication)
+@current_ability
+exit
+next
+ApplicationController
+ApplicationController.respond_to? :current_ability
+ApplicationController.new.respond_to? :current_ability
+ApplicationController.new.current_ability
+exit
+@current_ability
+exit
+next
+@current_ability
+exit
+request
+request.user_agent
+request.native_webkit_device_type
+request.format
+ApplicationController.new.native_webkit_device_type
+android_version
+exit
+request
+request.format
+exit
+next
+exit
+current_user
+next
+exit
+whereami
+next
+exit
+params
+session
+session[:android_version] = '4.0'
+next
+exit
+params
+next
+session
+next
+exit
+session
+exit
+session
+exit
+render text: "HAI" and return
+exit
+next
+exit
+request.format
+exit
+next
+exit
+android_version
+next
+exit
+next
+request.format
+exit
+next
+exit
+format
+exit
+format
+format.html
+format.json
+format.methods
+format.class
+ActionController::MimeResponds::Collector.methods - Object.methods
+next
+format
+next
+exit
+next
+exit
+next
+token
+whereami
+next
+ItriageUser
+next
+exit
+old_user.name
+next
+new_user
+next
+attrs
+next
+new_user.attributes
+attrs
+next
+new_user.new_record?
+next
+new_user
+exit
+new_user
+new_user.new_record?
+exit
+new_user.new_record?
+new_user.uid
+new_user
+!new_user.new_record?
+new_user.uid
+next
+exit
+next
+!new_user.new_record? && new_user.uid
+new_user
+!new_user.new_record? && new_user.uid
+new_user.uid
+new_user
+test_user = Itriage::AuthClient::User.find_or_initialize_by_email(old_user.email)
+test_user.new_record?
+test_user.uid
+new_user.uid
+old_user.uid
+attrs
+field_names = (old_user.attributes.keys & temp_user.attributes.keys) - ["id"]
+field_names = (old_user.attributes.keys & test_user.attributes.keys) - ["id"]
+exit
+old_user.email
+next
+new_user.uid
+next
+!new_user.new_record? && new_user.uid
+new_user.uid
+exit
+new_user
+next
+new_user
+new_user.reload
+Itriage::AuthClient::User.count
+exit
+Itriage::AuthClient::User.all.size
+Itriage::AuthClient::User.datbase
+Itriage::AuthClient::User.database
+Itriage::AuthClient::User.methods
+Itriage::AuthClient::User.methods.sort
+Itriage::AuthClient::User.connection
+eit
+exit
+new_user.new_record?
+new_user.uid
+next
+exit
+next
+new_user.new_record?
+next
+new_user.new_record?
+new_user.uid
+exit
+user
+next
+exit
+@user
+user
+exit
+user
+@user
+exit
+@user
+user
+exit
+user
+@user
+exit
+current_itriage_user.present?
+!has_access_to?(@office_location)
+current_itriage_user.family)
+(current_itriage_user.present? && @appointment.family != current_itriage_user.family)
+!has_access_to?(@office_location)
+next
+(current_itriage_user.present? && @appointment.family != current_itriage_user.family) && !has_access_to?(@office_location)
+next
+exit
+next
+exit
+next
+@provider
+@appointment.appointment_book
+@appointment.appointment_book == @provider
+@for_patient
+params[:scheduled_at]
+next
+exit
+next
+@errors
+next
+exit
+next
+valid?
+next
+adapter.send_email?
+next
+errors
+next
+format
+args
+*
+exit
+referrer_method
+referring_method
+method_referrer
+method_referred
+referred_method
+callee_method
+caller_method
+self.caller_method
+caller
+whereami
+current_method
+self.current_method
+__callee__
+__method__
+__callee__.__callee_
+__callee__.methods
+__callee__.instance_methods
+__callee__.methods
+caller
+__callee__.dont
+__callee__.methods - Object.methods
+__callee__.nin
+__callee__.succ
+__callee__
+__callee__.next
+__callee__.all
+__callee__.all.class
+__callee__.all.methods
+whereami
+exit
+next
+response_body
+default_render
+default_render.class
+default_render.method
+default_render.methods
+exit
+whereami
+exit
+next
+exit
+next
+exit
+next
+exit
+next
+exit
+request.format
+request.format.js?
+request.format.json?
+next
+exit
+next
+exit
+Rails
+exit
+ActiveRecord::Migrator.current_version
+ActiveRecord::Base.connection.instance_eval { @config }
+ActiveRecord::Migrator.target_version
+ActiveRecord::Migrator.instance_eval{ @target_version }
+self.instance_eval{ @target_version }
+self.reflect_on_all_associations
+self.methods - Object.methods
+self.class
+self.class_name
+self
+self.super
+self.parent
+self.up
+current_method
+method
+@target_version
+exit
+ActiveRecord::Base.connection.instance_eval { @config }
+next
+ActiveRecord::Base.connection.instance_eval { @config }
+current
+table
+exit
+__FILE__
+exit
+Player.new
+Player.new.name = "Ryan"
+player = Player.new
+player.name = 'Ryan'
+player.name
+exit
+p.name
+exit
+p.name = "asdf"
+p.instance_methods
+p.methods
+p.methods - Object.new.methods
+exit
+p.methods - Object.new.methods
+exit
+p.methods - Object.new.methods
+p.instance_variables
+p.name = "asdf"
+p.instance_variables
+exit
+p.expect
+p.inspect
+p
+p.name = "Ryan"
+p
+var = "test"
+@#var
+exit
+p.name = "Ryan"
+p.name
+exit
+p.name = "Ryan"
+p.name
+exit
+p.name = "Ryan"
+p.name
+exit
+p.name = "Ryan"
+p.name
+Class.respond_to?(:respond_to_missing)
+Class.respond_to?(:respond_to_missing?)
+Class.respond_to_missing?
+Class.respond_to_missing?(:stuff)
+Class.respond_to_missing?(:stuff, :asdf)
+Class.respond_to_missing?.arity
+Class.send(:respond_to_missing?, :arity)
+Class.send(:arity, :respond_to_missing?)
+exit
+ActiveSupport
+ActiveSupport::HashWithIndifferentAccess
+HashWithIndifferentAccess
+ActiveSupport
+ActiveSupport.methods
+include ActiveSupport
+include ::ActiveSupport
+include ::ActiveSupport::HashWithIndifferentAccess.new
+include ActiveSupport::HashWithIndifferentAccess.new
+include ::ActiveSupport::HashWithIndifferentAccess.new
+include ::ActiveSupport::HashWithIndifferentAccess
+exit
+active_support/core_ext/hash/keys
+require 'active_support/core_ext/hash/keys'
+gem
+gem('activesupport)
+gem('activesupport')
+gem('activesupport').methods
+gem('activesupport').methods - Object.methods
+gem('activesupport').^
+gem('activesupport').^('asdf')
+gem('activesupport').^(1)
+gem('activesupport'). | ('asdf')
+gem('activesupport'). |('asdf')
+exit
+Hash.methods - Object.methods
+Hash[YAML.load_file(File.join("config", "app_config.yml"))[Rails.env]]
+Hash[YAML.load_file(File.join("config", "app_config.yml"))[Rails.env]].with_indifferent_access
+Hash[YAML.load_file(File.join("config", "app_config.yml"))[Rails.env]]
+YAML.load_file(File.join("config", "app_config.yml"))[Rails.env]
+require 'active_support'
+require 'activesupport'
+require 'active_support'
+require 'active_support/hash_with_indifferent_access'
+HashWithIndifferentAccess
+ActiveSupport::HashWithIndifferentAccess
+HashWithIndifferentAccess
+exit
+HashWithIndifferentAccess
+{}.with_indifferent_access
+HashWithIndifferentAccess.new.with_indifferent_access
+Hash.new.with_indifferent_access
+Hash.instance_method
+Hash.instance_methods
+Hash.instance_methods - Object.instance_methods
+HashWithIndifferentAccess.instance_methods - Object.instance_methods
+{}.with_indifferent_access
+HashWithIndifferentAccess.new.with_indifferent_access
+Hash.new.with_indifferent_access
+exit
+next
+HashWithIndifferentAccess[YAML.load_file(File.join("config", "app_config.yml"))[Rails.env]]
+HashWithIndifferentAccess[YAML.load_file(File.join("config", "app_config.yml"))[Rails.env]][:redis]
+exit
+require 'active_support/core_ext/hash'
+next
+exit
+str"This is people's  Tests"
+str = "This is people's  Tests"
+str.underscorize
+str.methodize
+str.underscore
+str.dasherize
+str.downcase.dasherize
+str.downcase.gsub(/^[a-z0-9-]/,'')
+str.downcase.gsub(/[^a-z0-9-]/,'')
+str.downcase.gsub(/\s+/,' ').gsub(/[^a-z0-9-]/,'')
+str
+str.downcase.gsub(/\s?/,' ').gsub(/[^a-z0-9-]/,'')
+str.downcase.gsub(/\s*/,' ').gsub(/[^a-z0-9-]/,'')
+str.downcase.gsub(/\s+/,'-').gsub(/[^a-z0-9-]/,'')
+str.sluggify
+str.slugify
+str.downcase.gsub(/\s+/,'-').gsub(/[^a-z0-9-]/,'')
+str.titlize
+str.title
+str.parameterize
+FeatureTeam.new
+FeatureTeam.create.errors
+reload!
+FeatureTeam.create.errors
+reload!
+FeatureTeam.create.errors
+reload!
+FeatureTeam.create.errors
+reload!
+FeatureTeam.create.errors
+reload!
+FeatureTeam.create.errors
+FeatureTeam.create('Stuff and Things', 'stuff_things')
+"asdf".parameterize
+"as df".parameterize
+reload!
+FeatureTeam.create('Stuff and Things', 'stuff_things')
+activesupport/inflector
+require Inflector
+require ActiveSupport
+require 'activesupport'
+require 'active_support'
+require 'active_support/inflector'
+reload!
+"as df".parameterize
+FeatureTeam.create('Stuff and Things', 'stuff_things')
+FeatureTeam.create(name: 'Stuff and Things', branch: 'stuff_things')
+reload!
+FeatureTeam.create(name: 'Stuff and Things', branch: 'stuff_things')
+reload!
+FeatureTeam.create(name: 'Stuff and Things', branch: 'stuff_things')
+Room.new.feature_team
+Room.new.feature_team << FeatureTeam.new
+Room.new.feature_team = FeatureTeam.new
+room = Room.new
+room.feature_team = FeatureTeam.new
+room.feature_team
+room
+feature_team = room.feature_team
+feature_team.room
+FeatureTeam.create(name: 'Stuff and Things', branch: 'stuff_things')
+reload!
+FeatureTeam.create(name: 'Stuff and Things', branch: 'stuff_things')
+FeatureTeam.first
+FeatureTeam.last
+FeatureTeam.create(name: 'Stuff and Things', branch: 'stuff_things')
+quit
+HTTParty
+quit
+hipchat = HipChat::API.new(Rails.configuration.app[:hipchat][:token])
+hipchat.rooms_list
+hipchat = HipChat::API.new('api_token')
+hipchat.rooms_list
+Rails.configuration.app[:hipchat][:token]
+Rails.configuration.app
+Rails.configuration.app[:hipchat]
+Rails.configuration.app[:hipchat][:token]
+exit
+{}.with_indifferent_access
+{ "asdf": "fdsa"}.with_indifferent_access
+{ "asdf" => "fdsa"}.with_indifferent_access
+{ "asdf" => "fdsa"}.with_indifferent_access[:asdf]
+{ "asdf" => "fdsa" }.with_indifferent_access[:asdf]
+exit
+Rails.configuration.app
+Rails.configuration.app[:hipchat]
+Rails.configuration.app[:hipchat][:token]
+exit
+Rails.configuration.app[:hipchat][:token]
+exit
+hipchat = HipChat::API.new(Rails.configuration.app[:hipchat][:token])
+hipchat.rooms_list
+hipchat.rooms_list[0]
+hipchat.rooms_list.class
+hipchat.rooms_list.parsed_response
+hipchat.rooms_list.parsed_response[:rooms]
+hipchat.rooms_list.parsed_response['rooms']
+hipchat.rooms_list.parsed_response['rooms']
+hipchat.rooms_list.parsed_response['rooms'][0]
+response = hipchat.rooms_create("Test Room")
+response = hipchat.rooms_create("Test Room", 148845)
+response.body
+response.parsed_body
+response.parsed_response
+response.parsed_response
+response.parsed_response['room']
+response.parsed_response['room']['room_id']
+response = hipchat.rooms_create("Test Room", 148845)
+response.parsed_response
+raise Thing, 'asdf'
+raise Thing
+raise 'Thing'
+raise 'Thing', 'asdf'
+response = hipchat.rooms_create("Test Room", 148845)
+reload!
+response = hipchat.rooms_create("Test Room", 148845)
+reload!
+reload!
+response = Room.create(name: "Test Room")
+response = Room.create(Pname: "Test Room"})
+response = Room.create({name: "Test Room"})
+reload!
+response = Room.create(name: "Test Room")
+response = Room.create(name: "Test Room")
+exit
+response = Room.create(name: "Test Room")
+response = Room.create(name: "Test Room")
+reload!
+response = Room.create(name: "Test Room")
+exit
+room = Room.create(name: "Test Room")
+exit
+"Stuff Things".underscore
+"Stuff Things".parameterize.underscore
+exit
+reload!
+quit
+Server.new.subdomain
+Server.new.subdomain
+reload!
+Server.new.subdomain
+/\.[a-z0-9-]+.\w{2,3}/ =~ "something.domain.com"
+/\.[a-z0-9-]+.\w+/ =~ "something.domain.com"
+reload!
+Server.create.errors
+reload!
+Server.create.errors
+reload!
+Server.create.errors
+Server.all.size
+reload!
+Server.all.size
+Server.create.errors
+exit
+Server.create.errors
+reload!
+Server.create.errors
+reload!
+Server.create.errors
+Server.create.errors
+reload!
+Server.create.errors
+reload!
+Server.create.errors
+Server.new.valid?
+Server.new.subdomain.valid?
+exit
+Server
+Server.create
+Server.create.errors
+Server.create(subdomain: 'asdf')
+exit
+Server.al
+Server.all
+exit
+Server.where(["id IS NOT IN (?)", FeatureTeam.all.pluck(:server_id)])
+reload!
+Server.where(["id IS NOT IN (?)", FeatureTeam.all.pluck(:server_id)])
+exit
+Server.where(["id IS NOT IN (?)", FeatureTeam.all.pluck(:server_id)])
+Server.where(["id IS NOT IN (?)", FeatureTeam.pluck(:server_id)])
+FeatureTeam.pluck(:server_id)
+Server.where("id IS NOT IN (?)", FeatureTeam.pluck(:server_id))
+Server.where(["id IS NOT IN (?)", FeatureTeam.pluck(:server_id)])
+Server.where(["id NOT IN (?)", FeatureTeam.pluck(:server_id)])
+exit
+Server.available
+Server.all
+where(["id NOT IN (?)", FeatureTeam.pluck(:server_id)])
+Server.where(["id NOT IN (?)", FeatureTeam.pluck(:server_id)])
+FeatureTeam.pluck(:server_id)
+where(["id NOT IN (?)", []])
+Server.where(["id NOT IN (?)", []])
+Server.where(["id NOT IN (?)", [1]])
+Server.where(["server.id NOT IN (?)", []])
+Server.where(["id NOT IN (2)", []])
+Server.where(["id NOT IN (2)", []])
+reload!
+Server.where(["id NOT IN (2)", []])
+Server.where(["id NOT IN (?)", FeatureTeam.pluck(:server_id)])
+exit
+npm update
+npm upgrade
+exit
+HipChat::Api.new
+HipChat::Api
+HipChat
+HipChat::API
+HipChat::API.new
+HipChat::API.new(Rails.configuration.app[:hipchat_api])
+Rails.configuration.app
+HipChat::API.new(Rails.configuration.app[:hipchat][:token])
+hipchat = HipChat::API.new(Rails.configuration.app[:hipchat][:token])
+hipchat.users_show('rcross@itriagehealth.com')
+user = hipchat.users_show('rcross@itriagehealth.com')
+user
+user.attributes
+user.keys
+user['user']
+user.headers
+user.keys
+user['user']
+user['user'].keys
+user['user']['name']
+user['user']['user_id']
+reload!
+exit
+Server.available
+Server.unscoped.available
+Server.available
+Server.where(["id NOT IN (?)", FeatureTeam.pluck(:server_id)])
+feature_team_ids = FeatureTeam.pluck(:server_id)
+Server.find_by_sql('SELECT "servers".* FROM "servers" WHERE (id NOT IN (NULL))')
+Server.find_by_sql('SELECT "servers".* FROM "servers" WHERE (id NOT IN (3))')
+Server.find_by_sql('SELECT "servers".* FROM "servers" WHERE (id NOT IN (2))')
+Server.where(["id NOT IN (?)", FeatureTeam.pluck(:server_id) || []])
+Server.where(["id NOT IN (?)", (FeatureTeam.pluck(:server_id) || [])])
+(FeatureTeam.pluck(:server_id) || [])
+Server.where(id: !FeatureTeam.collect(&:server_id))
+Server.where(id: !FeatureTeam.pluck(:server_id))
+!FeatureTeam.pluck(:server_id)
+FeatureTeam.pluck(:server_id)
+Server.where(id: FeatureTeam.pluck(:server_id))
+Server.where(["id NOT IN (?)", []])
+Server.where(["id NOT IN (?)", [2]])
+Server.where(["id NOT IN (?)", [9999]])
+reload!
+Server.available
+exit
+Server.available
+reload!
+Server.available
+exit
+Server.available
+exit
+Server.available
+reload!
+Server.available
+reload!
+Server.available
+reload!
+Server.available
+feature_team_server_ids = FeatureTeam.pluck(:server_id)
+feature_team_server_ids.any?
+reload!
+Server.available
+quit
+Server.available
+servers = 10.times { |i| 'feature'+i }
+servers = 10.times { |i| 'feature'+i.to_s }
+servers = 10.times { |i| "feature#{i}" }
+servers << 10.times { |i| "feature#{i}" }
+servers = 10.times.collect { |i| "feature#{i}" }
+servers = 10.times.collect { |i| "feature#{i+1}" }
+servers_alt = (1..10).to_a
+servers_alt = (1..10).collect { |i|  }
+servers_alt = (1..10).collect { |i| "feature#{i}" }
+quit
+Server.all.size
+exit
+Server.next_available
+FeatureTeam.first
+exit
+@feature_team = FeatureTeam.find("1-awesomeness")
+FeatureTeam.find(1).delete
+Member.first
+FeatureTeam.first.members << Member.first
+bb = IO.popen("cd ~/dev/cylence/enclavebot; git pull origin master; git push heroku master")
+b = bb.readlines
+b = bb.readlines
+b = bb.readlines
+puts b.join
+b = bb.readlines
+bb = IO.popen("cd ~/dev/cylence/enclavebot; git pull origin master; git push heroku master")
+b = bb.readlines
+reload!
+Deploy.create.errors
+deploy = Deploy.create.errors
+deploy = Deploy.create(environment: 'feature1', repository_id: 1, branch: 'develop_awesome', server_id: 1, sha: 'testshahere')
+deploy
+reload!
+deploy.perform!
+exit
+deploy = Deploy.first
+deploy.perform!
+deploy
+deploy.perform!
+Deploy.all.size
+deploy = Deploy.last
+deploy.perform!
+exit
+deploy = Deploy.last
+deploy.perform!
+deploy
+deploy = Deploy.create(environment: 'staging', repository_id: 1, branch: 'develop_awesome', server_id: 1, sha: 'testshahere')
+deploy.server.name
+deploy.server
+deploy.server.hostname
+exit
+deploy = Deploy.last
+deploy.perform!
+{}.merge({test: 'thing'})
+Array.instance_methods - Object.instance_methods
+Array.instance_methods.sort - Object.instance_methods
+y Array.instance_methods.sort - Object.instance_methods
+Array.new.delete
+y Hash.instance_methods.sort - Object.instance_methods
+y Hash.instance_methods.sort - Object.instance_methods
+{ one: '1', two: '2' }.delete(:one)
+hsh = { one: '1', two: '2' }
+hsh.delete(:one)
+hsh
+var = hsh.delete(:two)
+var
+hsh
+exit
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross')
+reload!
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross')
+reload!
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross')
+reload!
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross')
+m.name
+m.formatted_name
+m = Member.create(first_name: 'DeLynn', last_name: 'Barry')
+m.name
+m.formatted_name
+exit
+Member.all
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross')
+m = Member.create(first_name: 'DeLynn', last_name: 'Barry')
+Member.all
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross', email: 'rcross@itriagehealth.com')
+Member.all
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross', email: 'rcross@itriagehealth.com')
+reload!
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross', email: 'rcross@itriagehealth.com')
+m = Member.create(first_name: 'DeLynn', last_name: 'Barry', email: 'dbarry@itriagehealth.com')
+hipchat = HipChat::API.new(Rails.configuration.app[:hipchat][:token])
+user = hipchat.users_show(self.email)
+user = hipchat.users_show('dbarry@itriagehealth.com')
+m = Member.create(first_name: 'DeLynn', last_name: 'Barry', email: 'dbarry@itriagehealth.com')
+user = hipchat.users_show('dbarry@itriagehealth.com')
+user
+user = hipchat.users_show('rcross@itriagehealth.com')
+bad = hipchat.users_show('dbarry@itriagehealth.com')
+good = hipchat.users_show('rcross@itriagehealth.com')
+bad
+bad.keys
+bad['error']
+good.keys
+good['user']
+bad.key? :error
+bad.key? 'user'
+bad.key? 'error'
+bad.key?('error')
+bad['error'].keys
+bad['error']['message']
+bad['error']['code']
+bad['error']['type']
+reload!
+m = Member.create(first_name: 'DeLynn', last_name: 'Barry', email: 'dbarry@itriagehealth.com')
+reload!
+m = Member.create(first_name: 'DeLynn', last_name: 'Barry', email: 'dbarry@itriagehealth.com')
+Member.create(first_name: 'DeLynn', last_name: 'Barry', email: 'dbarry@itriagehealth.com').errors
+reload!
+Member.create(first_name: 'DeLynn', last_name: 'Barry', email: 'dbarry@itriagehealth.com').errors
+Member.destroy_all
+Member.all
+Member.create(first_name: 'DeLynn', last_name: 'Barry', email: 'dberry@itriagehealth.com')
+m = Member.create(first_name: 'Ryan', middle_name: 'L.', last_name: 'Cross', email: 'rcross@itriagehealth.com')
+exit
+FeatureTeam.create.errors
+FeatureTeam.create(name: 'Feature 1')
+FeatureTeam.create(name: 'Feature 1').errors
+reload!
+FeatureTeam.create(name: 'Feature 1').errors
+reload!
+FeatureTeam.create(name: 'Feature 1').errors
+FeatureTeam.create(name: 'Feature 2').errors
+reload!
+Deploy.recent(3)
+Deploy.create(branch: 'stuff', environment: 'staging')
+Deploy.last
+Deploy.last.update_attribute(:feature_team_id, 1)
+Deploy.last
+Deploy.last.feature_team
+reload!
+Deploy.last.feature_team
+Deploy.last.feature_team.name
+Deploy.recent
+Deploy.recent(2)
+reload!
+Deploy.recent
+Deploy.last.update_attribute(:member_id, 1)
+Deploy.last
+Member.all
+Deploy.last.update_attribute(:member_id, 2)
+Deploy.last.update_attribute(:repository, 'itriage3')
+Deploy.new
+Repository
+Repository.first
+Deploy.find(1).repository
+Deploy.find(1).update_attribute(:repository_id, 1)
+Deploy.find(1).server
+Deploy.find(1).update_attribute(:server_id, 1)
+exit
+Deploy.last
+Deploy.last.sha
+Deploy.last.sha(10)
+Deploy.last.sha[10]
+Deploy.last.sha[1...10]
+Deploy.last.sha[0...10].length
+Deploy.last.sha.length(10)
+Deploy.last.sha.length
+Deploy.last.sha[0...10].length
+exit
+FeatureTeam.new
+FeatureTeam.new.class.name
+FeatureTeam.new.class.name.underscore
+FeatureTeam.new.class.name.underscore.humanize
+FeatureTeam.new.class.name.underscore.humanize.downcase
+ft = FeatureTeam.new
+ft.class.name
+ft.class.name.camelcase
+ft.class.name.methodize
+ft.class.name.method
+ft.class.name.constantize
+ft.class.name
+ft.class.name.underscore
+ft.class.name.underscore.humanize
+ft.class.name.underscore.humanize.downcase
+ft.class.name.underscore.humanize.downcase
+exit
+FeatureTeam.all.each { |ft| ft.update_attribute(:branch, ft.branch.gsub('develop', 'feature')) }
+exit
+Struct
+thing = Struct.new(name: 'Ryan')
+thing = Struct.new({name: 'Ryan'})
+thing = Struct.new
+thing = Struct.new('asdf', 'fdsa')
+thing = Struct.new(:person, 'Ryan')
+thing
+thing.attributes
+thing.inspect
+thing.name
+thing.new
+thing = Struct.new(:name, age)
+thing = Struct.new(:name, :age)
+Thing = Struct.new(:name, :age)
+Thing.new(name: 'Ryan', age: 32)
+me = Thing.new(name: 'Ryan', age: 32)
+me.name
+me
+me = Thing.new('Ryan', 32)
+response = { 'room' => { 'room_id' => '11111' } }
+response['room']['room_id']
+response['room']
+response['room'] ? true : false
+exit
+FeatureTeam.last
+ft = FeatureTeam.last
+room = ft.room
+Room.last
+FeatureTeam.last
+FeatureTeam.last.members << Member.first
+FeatureTeam.last
+FeatureTeam.last.members
+Memberships
+Membership.last
+Membership.last
+quit
+FeatureTeam.pluck :name
+quit
+Deploy.create
+Deploy.create.errors
+Deploy.create(branch: 'thing', environment: 'staging', feature_team_id: 1)
+quit
+Rails.configuration.app['my_name']
+exit
+Member.all.size
+Member.pluck(:name)
+Member.pluck(:first_name)
+Member.all.collect(&:first_name)
+Member.new
+Member.pluck(:middle_name)
+Member.all.each do |m|
+  m.update_attribute(:middle_name, "O HAI")
+end
+Member.pluck(:middle_name)
+Member.transaction do
+  Member.all.each do |m|
+    m.update_attribute(:middle_name, "MiddleName")
+  end
+end
+Member.pluck(:middle_name)
+exit
+Deploy.first.
+Deploy.first.
+Deploy.first.
+Deploy.first
+Deploy.first.member
+Deploy.find(2).member
+Deploy.find(2).member = Member.first
+Deploy.find(2).member
+Deploy.find(2).update_attribute(:member_id, 1)
+Deploy.find(2).member
+deploy = Deploy.find(2)
+deploy.member.first_name
+exit
+exit

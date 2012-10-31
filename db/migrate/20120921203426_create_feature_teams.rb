@@ -4,6 +4,7 @@ class CreateFeatureTeams < ActiveRecord::Migration
       t.string :name
       t.string :slug
       t.string :branch
+      t.integer :quarterback_id
       t.references :server
       t.references :room
 

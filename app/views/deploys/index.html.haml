@@ -1,25 +1,22 @@
-%h1 Listing deploys
+%h1 Deploys
 
-%table
-  %tr
-    %th Repository
-    %th Branch
-    %th SHA
-    %th Member
-    %th Environment
-    %th Server
-    %th
-    %th
-    %th
-
-  - @deploys.each do |deploy|
+%table.table.table-hover
+  %thead
     %tr
-      %td= deploy.repository
-      %td= deploy.branch
-      %td= deploy.sha
-      %td= deploy.member
-      %td= deploy.environement
-      %td= deploy.server
-      %td= link_to 'Show', deploy
-      %td= link_to 'Edit', edit_deploy_path(deploy)
-      %td= link_to 'Destroy', deploy, method: :delete, data: { confirm: 'Are you sure?' }
+      %th sha
+      %th Repository
+      %th Branch
+      %th Member
+      %th Server
+      %th Environment
+
+  %tbody
+    - @deploys.each do |deploy|
+      %tr
+        %td= link_to deploy.short_sha, deploy
+        %td= link_to deploy.repository.name, deploy.repository
+        %td= deploy.branch
+        %td= link_to deploy.member.name, deploy.member
+        %td= link_to deploy.server.subdomain, deploy.server
+        %td= deploy.environment
+

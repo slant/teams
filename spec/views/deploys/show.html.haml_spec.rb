@@ -5,7 +5,7 @@ describe "deploys/show" do
     @deploy = assign(:deploy, stub_model(Deploy,
       :repository => "Repository",
       :branch => "Branch",
-      :sha => "Sha",
+      :sha => "sha",
       :user => nil
     ))
   end
@@ -15,7 +15,7 @@ describe "deploys/show" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Repository/)
     rendered.should match(/Branch/)
-    rendered.should match(/Sha/)
+    rendered.should match(/sha/)
     rendered.should match(//)
   end
 end

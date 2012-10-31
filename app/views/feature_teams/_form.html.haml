@@ -19,8 +19,8 @@
       = f.label :server
       = f.select :server_id, @available_servers.collect{ |s| [s.subdomain, s.id] }, include_blank: true
 
-  -#.field
-    -#%p= link_to 'Advanced...', '#'
+
+  -#= f.link_to_add 'Add Another Member', :members
 
   .actions
     = f.submit 'Save'
