@@ -26,7 +26,7 @@ end
 gem 'jquery-rails'
 
 group :production do
-  gem :ps
+  gem 'ps'
 end
 
 group :development, :test do
